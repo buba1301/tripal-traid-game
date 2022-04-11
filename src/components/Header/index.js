@@ -12,7 +12,7 @@ const Header = () => {
             <div className={s.logo}></div>
             <ul className={s.nav}>
               {MENU.map((element) => (
-                <li>
+                <li key={element}>
                   <a href='#'>{element}</a>
                 </li>
               ))}
