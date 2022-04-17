@@ -1,4 +1,7 @@
 import React from 'react';
+
+import logo from '../../assets/logo.png';
+
 import s from './Header.module.css';
 
 const MENU = ['Menu 1', 'Menu 2', 'Menu 3', 'Menu 4'];
@@ -7,9 +10,11 @@ const Header = () => {
   return (
     <div>
       <header className={s.root}>
-        <div className={s.header}>
-          <div className={s.container}>
-            <div className={s.logo}></div>
+        <div className={s.headerWrap}>
+          <div className={s.header}>
+            <div className={s.logo}>
+              <img src={logo} alt='Logo' />
+            </div>
             <ul className={s.nav}>
               {MENU.map((element) => (
                 <li key={element}>
