@@ -1,7 +1,9 @@
 import React from 'react';
 
-import s from './Slider.module.css';
 import Container from '../Container';
+import Heading from '../Heading';
+
+import s from './Slider.module.css';
 
 const Slider = () => {
   return (
@@ -9,8 +11,12 @@ const Slider = () => {
       <section className={s.section}>
         <div className={s.slider}>
           <Container className={s.sliderContent}>
-            <h1 className={s.header}>Wow</h1>
-            <h2 className={s.subheader}>Wow.Wow.Wow</h2>
+            <Heading level={1} className={s.header}>
+              Wow
+            </Heading>
+            <Heading level={2} className={s.subheader}>
+              Wow.Wow.Wow
+            </Heading>
             <div className={s.call}>
               <button className={s.button}>Wow</button>
             </div>
