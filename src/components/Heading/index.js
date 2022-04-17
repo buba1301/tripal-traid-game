@@ -20,6 +20,10 @@ const Heading = ({ children, level, className }) => {
   );
 };
 
+Heading.defaultProps = {
+	leve: 1
+}
+
 Heading.propTypes = {
   children: propTypes.node,
   level: propTypes.number,
