@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo from '../../assets/logo.png';
+import Container from '../Container';
 
 import s from './Header.module.css';
 
@@ -8,7 +9,7 @@ const MENU = ['Menu 1', 'Menu 2', 'Menu 3', 'Menu 4'];
 
 const Header = () => {
   return (
-    <div>
+    <Container>
       <header className={s.root}>
         <div className={s.headerWrap}>
           <div className={s.header}>
@@ -25,7 +26,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </div>
+    </Container>
   );
 };
 
